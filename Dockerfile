@@ -1,6 +1,6 @@
 FROM openjdk
 WORKDIR /base
 COPY cli/build/libs/worker.cli-all.jar worker.cli-all.jar
-CMD ["java","-jar","worker.cli-all.jar","--port","8080"]
+CMD ["java","-jar","worker.cli-all.jar"]
 EXPOSE 80
 #gradle shadowJar
