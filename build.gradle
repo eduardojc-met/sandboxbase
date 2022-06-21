@@ -1,0 +1,49 @@
+allprojects { project ->
+	buildscript {
+		repositories {
+			mavenLocal()
+			mavenCentral()
+			jcenter()
+			maven {
+				url "https://plugins.gradle.org/m2/"
+			}
+			maven {
+				url "https://storage.googleapis.com/sandbox-maven/maven2"
+			}
+		}
+	}
+
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		jcenter()
+		maven {
+			url "https://storage.googleapis.com/sandbox-maven/maven2"
+		}
+	}
+
+}
+
+subprojects { Project subProject ->
+	apply plugin: 'java'
+	apply plugin: 'java-library'
+	apply plugin: 'maven'
+
+	group = 'com.sandbox'
+	version = ''
+
+	plugins.withType(JavaPlugin) {
+		sourceCompatibility = 1.8
+		targetCompatibility = 1.8
+	}
+
+	//make outputs deterministic
+	tasks.withType(Jar) { jarTask ->
+		jarTask.preserveFileTimestamps = false
+		jarTask.reproducibleFileOrder = true
+	}
+	tasks.withType(Tar) { tarTask ->
+		tarTask.preserveFileTimestamps = false
+		tarTask.reproducibleFileOrder = true
+	}
+}

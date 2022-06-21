@@ -1,0 +1,8 @@
+com.sandbox.worker.cli.config.$InjectedPropertiesDefinitionClass
+com.sandbox.worker.cli.$BeanFactory$ActivityStore0DefinitionClass
+com.sandbox.worker.cli.$BeanFactory$EventService2DefinitionClass
+com.sandbox.worker.cli.$BeanFactoryDefinitionClass
+com.sandbox.worker.cli.$BeanFactory$HttpMessageConverter1DefinitionClass
+com.sandbox.worker.cli.services.$ActivityStoreServerDefinitionClass
+com.sandbox.worker.cli.$CLIRequestServerDefinitionClass
+com.sandbox.worker.cli.$CLIRequestHandlerDefinitionClass

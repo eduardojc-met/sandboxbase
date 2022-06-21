@@ -1,0 +1,10 @@
+com.sandbox.worker.cli.$BeanFactory$IntrospectionRef
+com.sandbox.worker.cli.$CLIRequestServer$IntrospectionRef
+com.sandbox.worker.cli.services.$ActivityStoreServer$IntrospectionRef
+com.sandbox.worker.cli.services.$ActivityServerInitializer$IntrospectionRef
+com.sandbox.worker.cli.services.$ActivityServerHandler$IntrospectionRef
+com.sandbox.worker.cli.config.$Config$IntrospectionRef
+com.sandbox.worker.cli.services.$LocalFileMetadataService$IntrospectionRef
+com.sandbox.worker.cli.config.$InjectedProperties$IntrospectionRef
+com.sandbox.worker.cli.$CLIRequestHandler$IntrospectionRef
+com.sandbox.worker.cli.services.$CLIHttpMessageConverter$IntrospectionRef
